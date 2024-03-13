@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But not these files
+!.gitignore
+!selenium_download_resize.py
+!main.py
+!README.md

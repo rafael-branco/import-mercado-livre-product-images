@@ -2,7 +2,8 @@
 
 Welcome to the Import Mercado Livre Product Images tool! This guide will walk you through how to use this tool to easily download product images from Mercado Livre. Please follow the steps below to get started.
 
-![image](https://github.com/rafael-branco/import-mercado-livre-product-images/releases/download/v1.0.0/main.exe)
+![image](https://github.com/rafael-branco/import-mercado-livre-product-images/assets/72389630/5a1feb55-61d5-4973-b3a9-42ded94eefbe)
+
 
 ## Prerequisites
 
@@ -10,7 +11,7 @@ Before you start, ensure you have an internet connection and permissions to down
 
 ## Download
 
-1. Download the tool from the following link: [Import Mercado Livre Product Images v1.0.0](https://github.com/rafael-branco/import-mercado-livre-product-images/archive/refs/tags/v1.0.0.zip).
+1. Download the tool from the following link: [Import Mercado Livre Product Images v1.0.0](https://github.com/rafael-branco/import-mercado-livre-product-images/releases/download/v1.0.0/main.exe).
 2. Your antivirus software may block the download because it is an executable file. If this happens, please temporarily disable your antivirus.
 3. Once the download is complete, extract the ZIP file to a folder of your choice.
 

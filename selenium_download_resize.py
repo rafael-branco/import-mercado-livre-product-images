@@ -1,3 +1,4 @@
+import time
 import os
 import logging
 from selenium import webdriver
@@ -49,7 +50,8 @@ def download_and_resize_images_selenium(folder, url):
                 resized_img = img_obj.resize((original_size[0]*2, original_size[1]*2))
                 
                 # Save the image
-                image_path = os.path.join(folder, f"image_{i}.jpg")
+                timestamp = int(time.time() * 1000)  # Milliseconds since epoch
+                image_path = os.path.join(folder, f"image_{i}_{timestamp}.jpg")
                 resized_img.save(image_path)
                 logging.info("Downloaded and resized image saved to: %s", image_path)
                 print(f"Downloaded and resized image saved to: {image_path}")

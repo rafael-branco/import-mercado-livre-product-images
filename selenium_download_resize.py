@@ -44,11 +44,19 @@ def download_and_resize_images_selenium(folder, url):
 
             img_response = requests.get(img_url)
             if img_response.status_code == 200:
-                # Resize the image
+                # Assuming img_response.content contains the image data
                 img_obj = Image.open(BytesIO(img_response.content))
-                original_size = img_obj.size
-                resized_img = img_obj.resize((original_size[0]*2, original_size[1]*2))
-                
+                original_width, original_height = img_obj.size
+
+                # Calculate the scaling factor needed to ensure both dimensions are at least 500 pixels
+                scale_factor = max(505 / original_width, 505 / original_height, 2) # Ensuring a minimum of double size or 500 pixels
+
+                # Apply the scaling factor
+                desired_width = int(original_width * scale_factor)
+                desired_height = int(original_height * scale_factor)
+
+                # Resize the image to the new dimensions while preserving the aspect ratio
+                resized_img = img_obj.resize((desired_width, desired_height), Image.ANTIALIAS)
                 # Save the image
                 timestamp = int(time.time() * 1000)  # Milliseconds since epoch
                 image_path = os.path.join(folder, f"image_{i}_{timestamp}.jpg")

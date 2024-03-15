@@ -11,7 +11,7 @@ Before you start, ensure you have an internet connection and permissions to down
 
 ## Download
 
-1. Download the tool from the following link: [Import Mercado Livre Product Images](github.com/rafael-branco/import-mercado-livre-product-images/releases/latest/download/main.exe).
+1. Download the tool from the following link: [Import Mercado Livre Product Images](https://github.com/rafael-branco/import-mercado-livre-product-images/releases/latest/download/main.exe).
 2. Your antivirus software may block the download because it is an executable file. If this happens, please temporarily disable your antivirus.
 3. Once the download is complete, extract the ZIP file to a folder of your choice.
 
